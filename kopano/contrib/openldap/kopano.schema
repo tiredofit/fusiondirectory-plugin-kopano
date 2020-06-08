@@ -1,13 +1,4 @@
-#
-################################################################################
-#
-dn: cn=kopano,cn=schema,cn=config
-objectClass: olcSchemaConfig
-cn: kopano
-#
-################################################################################
-#
-olcAttributeTypes: (
+attributetype (
   1.3.6.1.4.1.47732.1.1.1.1
   NAME 'kopanoQuotaOverride'
   DESC 'KOPANO: Override child quota'
@@ -15,10 +6,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+
+attributetype (
   1.3.6.1.4.1.47732.1.1.1.2
   NAME 'kopanoQuotaWarn'
   DESC 'KOPANO: Warning quota size in MB'
@@ -26,10 +15,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+
+attributetype (
   1.3.6.1.4.1.47732.1.1.1.3
   NAME 'kopanoQuotaSoft'
   DESC 'KOPANO: Soft quota size in MB'
@@ -37,10 +24,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+
+attributetype (
   1.3.6.1.4.1.47732.1.1.1.4
   NAME 'kopanoQuotaHard'
   DESC 'KOPANO: Hard quota size in MB'
@@ -48,10 +33,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.1.5
   NAME 'kopanoUserDefaultQuotaOverride'
   DESC 'KOPANO: Override User default quota for children'
@@ -59,10 +42,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.1.6
   NAME 'kopanoUserDefaultQuotaWarn'
   DESC 'KOPANO: User default warning quota size in MB'
@@ -70,10 +51,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.1.7
   NAME 'kopanoUserDefaultQuotaSoft'
   DESC 'KOPANO: User default soft quota size in MB'
@@ -81,10 +60,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.1.8
   NAME 'kopanoUserDefaultQuotaHard'
   DESC 'KOPANO: User default hard quota size in MB'
@@ -92,10 +69,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.1
   NAME 'kopanoAdmin'
   DESC 'KOPANO: Administrator of kopano'
@@ -103,10 +78,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.2
   NAME 'kopanoSharedStoreOnly'
   DESC 'KOPANO: is store a shared store'
@@ -114,10 +87,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.3
   NAME 'kopanoAccount'
   DESC 'KOPANO: entry is a part of kopano'
@@ -125,10 +96,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.4
   NAME 'kopanoSendAsPrivilege'
   DESC 'KOPANO: Users may directly send email as this user'
@@ -136,10 +105,8 @@ olcAttributeTypes: (
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.5
   NAME 'kopanoMrAccept'
   DESC 'KOPANO: user should auto-accept meeting requests'
@@ -147,10 +114,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.6
   NAME 'kopanoMrDeclineConflict'
   DESC 'KOPANO: user should automatically decline conflicting meeting requests'
@@ -158,10 +123,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.7
   NAME 'kopanoMrDeclineRecurring'
   DESC 'KOPANO: user should automatically decline recurring meeting requests'
@@ -169,10 +132,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.8
   NAME 'kopanoId'
   DESC 'KOPANO: Generic unique ID'
@@ -180,10 +141,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.40
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.9
   NAME 'kopanoResourceType'
   DESC 'KOPANO: for shared stores, resource is type Room or Equipment'
@@ -192,10 +151,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.10
   NAME 'kopanoResourceCapacity'
   DESC 'KOPANO: number of rooms or equipment available'
@@ -203,10 +160,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.11
   NAME 'kopanoHidden'
   DESC 'KOPANO: This object should be hidden from address book'
@@ -214,30 +169,24 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.13
   NAME 'kopanoEnabledFeatures'
   DESC 'KOPANO: This user has these features explicitly enabled'
   EQUALITY caseIgnoreMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.44
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.2.14
   NAME 'kopanoDisabledFeatures'
   DESC 'KOPANO: This user has these features explicitly disabled'
   EQUALITY caseIgnoreMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.44
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.3.1
   NAME 'kopanoAliases'
   DESC 'KOPANO: All other email addresses for this user'
@@ -245,10 +194,8 @@ olcAttributeTypes: (
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.4.1
   NAME 'kopanoUserServer'
   DESC 'KOPANO: Home server for the user'
@@ -257,10 +204,10 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+                                                                                
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.6.1
   NAME 'kopanoUserArchiveServers'
   DESC 'KOPANO: List of server names that contain an archive store for the user'
@@ -268,10 +215,8 @@ olcAttributeTypes: (
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.1.6.2
   NAME 'kopanoUserArchiveCouplings'
   DESC 'KOPANO: List of username:foldername pairs that specify many-to-one archive locations'
@@ -279,10 +224,8 @@ olcAttributeTypes: (
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.2.2.1
   NAME 'kopanoSecurityGroup'
   DESC 'KOPANO: group has security possibilities'
@@ -290,10 +233,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.3.2.4
   NAME 'kopanoViewPrivilege'
   DESC 'KOPANO: Companies with view privileges over selected company'
@@ -301,10 +242,8 @@ olcAttributeTypes: (
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.3.2.5
   NAME 'kopanoAdminPrivilege'
   DESC 'KOPANO: Users from different companies which are administrator over selected company'
@@ -312,10 +251,8 @@ olcAttributeTypes: (
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.3.2.6
   NAME 'kopanoSystemAdmin'
   DESC 'KOPANO: The user who is the system administrator for this company'
@@ -324,10 +261,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.3.1.5
   NAME 'kopanoQuotaUserWarningRecipients'
   DESC 'KOPANO: Users who will receive a notification email when a user exceeds his quota'
@@ -335,10 +270,8 @@ olcAttributeTypes: (
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.3.1.6
   NAME 'kopanoQuotaCompanyWarningRecipients'
   DESC 'KOPANO: Users who will receive a notification email when a company exceeds its quota'
@@ -346,10 +279,8 @@ olcAttributeTypes: (
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.3.4.1
   NAME 'kopanoCompanyServer'
   DESC 'KOPANO: Home server for the public folders for a company'
@@ -358,10 +289,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.4.4.1
   NAME 'kopanoHttpPort'
   DESC 'KOPANO: Port for the http connection'
@@ -369,10 +298,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.4.4.2
   NAME 'kopanoSslPort'
   DESC 'KOPANO: Port for the ssl connection'
@@ -380,10 +307,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.4.4.3
   NAME 'kopanoFilePath'
   DESC 'KOPANO: The Unix socket or named pipe to the server'
@@ -392,10 +317,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.4.4.4
   NAME 'kopanoContainsPublic'
   DESC 'KOPANO: This server contains the public store'
@@ -403,10 +326,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.4.4.6
   NAME 'kopanoProxyURL'
   DESC 'KOPANO: Full proxy URL for this server'
@@ -415,10 +336,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.5.5.1
   NAME 'kopanoFilter'
   DESC 'KOPANO: LDAP Filter to apply'
@@ -427,10 +346,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcAttributeTypes: (
+ 
+attributetype (
   1.3.6.1.4.1.47732.1.5.5.2
   NAME 'kopanoBase'
   DESC 'KOPANO: LDAP Search base to apply'
@@ -439,10 +356,8 @@ olcAttributeTypes: (
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE
   )
-#
-################################################################################
-#
-olcObjectClasses: (
+ 
+objectclass (
   1.3.6.1.4.1.47732.1.1.0.0
   NAME 'kopano-user'
   DESC 'KOPANO: an user of Kopano'
@@ -451,10 +366,8 @@ olcObjectClasses: (
   MUST ( cn )
   MAY ( kopanoQuotaOverride $ kopanoQuotaWarn $ kopanoQuotaSoft $ kopanoSendAsPrivilege $  kopanoQuotaHard $ kopanoAdmin $ kopanoSharedStoreOnly $ kopanoResourceType $  kopanoResourceCapacity $ kopanoAccount $ kopanoHidden $ kopanoAliases $  kopanoUserServer $ kopanoEnabledFeatures $ kopanoDisabledFeatures $  kopanoUserArchiveServers $ kopanoUserArchiveCouplings $  uidNumber )
   )
-#
-################################################################################
-#
-olcObjectClasses: (
+ 
+objectclass (
   1.3.6.1.4.1.47732.1.6.0.0
   NAME 'kopano-contact'
   DESC 'KOPANO: a contact of Kopano'
@@ -463,10 +376,8 @@ olcObjectClasses: (
   MUST ( cn $ uidNumber )
   MAY ( kopanoSendAsPrivilege $ kopanoHidden $ kopanoAliases $ kopanoAccount )
   )
-#
-################################################################################
-#
-olcObjectClasses: (
+ 
+objectclass (
   1.3.6.1.4.1.47732.1.2.0.0
   NAME 'kopano-group'
   DESC 'KOPANO: a group of Kopano'
@@ -475,10 +386,8 @@ olcObjectClasses: (
   MUST ( cn )
   MAY ( kopanoAccount $ kopanoHidden $ mail $ kopanoAliases $ kopanoSecurityGroup $ kopanoSendAsPrivilege $  gidNumber )
   )
-#
-################################################################################
-#
-olcObjectClasses: (
+ 
+objectclass (
   1.3.6.1.4.1.47732.1.3.0.0
   NAME 'kopano-company'
   DESC 'KOPANO: a company of Kopano'
@@ -487,10 +396,8 @@ olcObjectClasses: (
   MUST ( ou )
   MAY ( kopanoAccount $ kopanoHidden $  kopanoViewPrivilege $ kopanoAdminPrivilege $ kopanoSystemAdmin $  kopanoQuotaOverride $ kopanoQuotaWarn $  kopanoUserDefaultQuotaOverride $ kopanoUserDefaultQuotaWarn $ kopanoUserDefaultQuotaSoft $ kopanoUserDefaultQuotaHard $  kopanoQuotaUserWarningRecipients $ kopanoQuotaCompanyWarningRecipients $  kopanoCompanyServer )
   )
-#
-################################################################################
-#
-olcObjectClasses: (
+ 
+objectclass (
   1.3.6.1.4.1.47732.1.4.0.0
   NAME 'kopano-server'
   DESC 'KOPANO: a Kopano server'
@@ -499,10 +406,8 @@ olcObjectClasses: (
   MUST ( cn )
   MAY ( kopanoAccount $ kopanoHidden $ kopanoHttpPort $ kopanoSslPort $ kopanoFilePath $ kopanoContainsPublic $ kopanoProxyURL )
   )
-#
-################################################################################
-#
-olcObjectClasses: (
+ 
+objectclass (
   1.3.6.1.4.1.47732.1.5.0.0
   NAME 'kopano-addresslist'
   DESC 'KOPANO: a Kopano Addresslist'
@@ -511,10 +416,8 @@ olcObjectClasses: (
   MUST ( cn )
   MAY ( kopanoAccount $ kopanoHidden $ kopanoFilter $ kopanoBase )
   )
-#
-################################################################################
-#
-olcObjectClasses: (
+ 
+objectclass (
   1.3.6.1.4.1.47732.1.7.0.0
   NAME 'kopano-dynamicgroup'
   DESC 'KOPANO: a Kopano dynamic group'
@@ -523,6 +426,4 @@ olcObjectClasses: (
   MUST ( cn )
   MAY ( kopanoAccount $ kopanoHidden $ mail $ kopanoAliases $ kopanoFilter $ kopanoBase )
   )
-#
-################################################################################
-#
+ 
