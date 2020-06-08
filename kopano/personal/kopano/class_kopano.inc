@@ -57,15 +57,15 @@ class kopano extends simplePlugin {
             'Quotas' => array(
                 'name' => _('Quotas') ,
                 'attrs' => array(
-                    new StringAttribute(_('Send Warning when Mailbox at (MB)') , _('Warning Quota in MB') , 'kopanoQuotaWarn', FALSE) ,
-                    new StringAttribute(_('Soft Quota (MB)') , _('Soft Quota Size in MB') , 'kopanoQuotaSoft', FALSE) ,
-                    new StringAttribute(_('Hard Quota (MB)') , _('Hard Quota in MB') , 'kopanoQuotaHard', FALSE) ,
+                    new StringAttribute(_('Send Warning when Mailbox at (MB)') , _('Send Warning email to user at this value') , 'kopanoQuotaWarn', FALSE) ,
+                    new StringAttribute(_('Soft Quota (MB)') , _('Limit user from sending email at this value') , 'kopanoQuotaSoft', FALSE) ,
+                    new StringAttribute(_('Hard Quota (MB)') , _('Limit user from sending and receiving at this value') , 'kopanoQuotaHard', FALSE) ,
                 )
             ) ,
             'Delegation' => array(
                 'name' => _('Delegation') ,
                 'attrs' => array(
-                    new SetAttribute(new MailAttribute(_('Users who may directly send as this user') , _('') , 'kopanoSendAsPrivilege')) ,
+                    new SetAttribute(new MailAttribute(_('Other Users who may directly send as this user') , _('') , 'kopanoSendAsPrivilege')) ,
                 )
             ) ,
             'Settings' => array(
