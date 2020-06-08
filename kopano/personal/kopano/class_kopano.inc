@@ -38,14 +38,14 @@ class kopano extends simplePlugin {
                 'attrs' => array(
                     new StringAttribute(_('Personal Email Address') , _('Personal Email Address') , 'gosaMailAlternateAddress', FALSE) ,
                     new BooleanAttribute(_('Hide from Address Book') , _('Hide from Address Book') , 'kopanoHidden', FALSE, 0, "", 1, 0) ,
-                    new SetAttribute(new SelectAttribute(_('Enabled Features') , _('') , 'KopanoEnabledFeatures', FALSE, array(
+                    new SetAttribute(new SelectAttribute(_('Enabled Features') , _('Give user ability to utilize these features') , 'KopanoEnabledFeatures', FALSE, array(
                         'IMAP',
                         'POP3',
                         'SMTP',
                         'MOBILE',
                         'OUTLOOK'
                     ))) ,
-                    new SetAttribute(new SelectAttribute(_('Disabled Features') , _('') , 'KopanoDisabledFeatures', FALSE, array(
+                    new SetAttribute(new SelectAttribute(_('Disabled Features') , _('Deny user ability to utilize these features') , 'KopanoDisabledFeatures', FALSE, array(
                         'IMAP',
                         'POP3',
                         'SMTP',
