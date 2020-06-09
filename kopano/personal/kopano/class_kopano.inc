@@ -36,7 +36,7 @@ class kopano extends simplePlugin {
             'Personal' => array(
                 'name' => _('Personal Info') ,
                 'attrs' => array(
-                    new StringAttribute(_('Personal Email Address') , _('Personal Email Address') , 'gosaMailAlternateAddress', FALSE) ,
+                    new StringAttribute(_('Personal Email Address') , _('Personal Email Address') , 'fdPrivateMail', FALSE) ,
                     new BooleanAttribute(_('Hide from Address Book') , _('Hide from Address Book') , 'kopanoHidden', FALSE, 0, "", 1, 0) ,
                     new SetAttribute(new SelectAttribute(_('Enabled Features') , _('Give user ability to utilize these features') , 'kopanoEnabledFeatures', FALSE, array(
                         'IMAP',
