@@ -55,5 +55,5 @@ To use this we assume the following:
 
 ### References
 - [https://www.fusiondirectory.org](https://wwwfusiondirectory.org)
-- [https://www.kopano.io](https://www.kopano.io]
+- [https://www.kopano.io](https://www.kopano.io)
 - The #fusiondirectory team on freenet
