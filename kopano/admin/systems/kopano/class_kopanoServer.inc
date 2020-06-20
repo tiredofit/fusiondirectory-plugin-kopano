@@ -19,7 +19,7 @@ class KopanoServer extends simplePlugin {
                     new IntAttribute(_('HTTP Port') , _('Port for the HTTP Connection') , 'kopanoHttpPort', TRUE, 0, 65535, 236) , 
                     new IntAttribute(_('SSL Port') , _('Port for the HTTPS Connection') , 'kopanoSslPort', TRUE, 0, 65535, 237) ,
                     new StringAttribute(_('Socket Path') , _('Unix socket or named pipe to the server') , 'kopanoFilePath', FALSE) ,
-                    new BooleanAttribute(_('Public Store') , _('This server contains the public store') , 'kopanoContainsPublic') ,
+                    new BooleanAttribute(_('Public Store') , _('This server contains the public store') , 'kopanoContainsPublic' , FALSE , 0, "", 1, 0) ,
                     new URLAttribute(_('Proxy URL') , _('Proxy URL for this server') , 'kopanoProxyURL') , ]], ];
             }
         }
