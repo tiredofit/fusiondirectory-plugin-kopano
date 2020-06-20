@@ -157,9 +157,7 @@ attributetype ( 1.3.6.1.4.1.47732.1.1.4.1 NAME 'kopanoUserServer'
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE
-  )
- 
-                                                                               
+  )                                                                          
  
 attributetype ( 1.3.6.1.4.1.47732.1.1.6.1 NAME 'kopanoUserArchiveServers'
   DESC 'KOPANO: List of server names that contain an archive store for the user'
@@ -279,13 +277,6 @@ attributetype ( 1.3.6.1.4.1.47732.1.5.5.2 NAME 'kopanoBase'
   SINGLE-VALUE
   )
  
-attributetype ( 1.3.6.1.4.1.38414.73.1.1 NAME 'fdContactRDN'
-  DESC 'FusionDirectory - Contact RDN'
-  EQUALITY caseExactIA5Match
-  SUBSTR caseExactIA5SubstringsMatch
-  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26
-  SINGLE-VALUE)
-
 
 objectclass ( 1.3.6.1.4.1.47732.1.1.0.0 NAME 'kopano-user'
   DESC 'KOPANO: an user of Kopano'
@@ -343,8 +334,3 @@ objectclass ( 1.3.6.1.4.1.47732.1.7.0.0 NAME 'kopano-dynamicgroup'
   MAY ( kopanoAccount $ kopanoHidden $ mail $ kopanoAliases $ kopanoFilter $ kopanoBase )
   )
  
-objectclass ( 1.3.6.1.4.1.38414.73.2.1 NAME 'fdKopanoPluginConf'
-  DESC 'FusionDirectory Kopano plugin configuration'
-  SUP top AUXILIARY
-  MUST ( cn )
-  MAY ( fdContactRDN ) )
