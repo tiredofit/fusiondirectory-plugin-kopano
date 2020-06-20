@@ -1,5 +1,5 @@
 <?php
-class kopano extends simplePlugin {
+class kopanoAccount extends simplePlugin {
     var $displayHeader = TRUE;
     var $objectclasses = array(
         'kopano-user'
@@ -11,7 +11,7 @@ class kopano extends simplePlugin {
             'plFilter' => '(objectClass=kopano-user)',
             'plIcon' => 'geticon.php?context=applications&icon=kopano&size=48',
             'plSmallIcon' => 'geticon.php?context=applications&icon=kopano&size=16',
-            'plSelfModify' => TRUE,
+            'plSelfModify' => FALSE,
             'plPriority' => 2,
             'plObjectClass' => array(
                 'kopano-user'
@@ -29,14 +29,13 @@ class kopano extends simplePlugin {
                 'name' => _('Organization') ,
                 'attrs' => array(
                     new MailAttribute(_('Email address') , _('Organization Email address') , 'mail', TRUE) ,
-                    new BooleanAttribute(_('Active') , _('Give Mail Access') , 'kopanoAccount', FALSE, 0, "", 1, 0) ,
                     new SetAttribute(new MailAttribute(_('Aliases') , _('Aliases') , 'kopanoAliases')) ,
                 )
             ) ,
-            'Personal' => array(
-                'name' => _('Personal Info') ,
+            'Permissions' => array(
+                'name' => _('Permissions') ,
                 'attrs' => array(
-                    new StringAttribute(_('Personal Email Address') , _('Personal Email Address') , 'fdPrivateMail', FALSE) ,
+                    new BooleanAttribute(_('Active') , _('Give Mail Access') , 'kopanoAccount', FALSE, 0, "", 1, 0) ,
                     new BooleanAttribute(_('Hide from Address Book') , _('Hide from Address Book') , 'kopanoHidden', FALSE, 0, "", 1, 0) ,
                     new SetAttribute(new SelectAttribute(_('Enabled Features') , _('Give user ability to utilize these features') , 'kopanoEnabledFeatures', FALSE, array(
                         'IMAP',
@@ -52,6 +51,7 @@ class kopano extends simplePlugin {
                         'MOBILE',
                         'OUTLOOK'
                     ))) ,
+                    new BooleanAttribute(_('Administrative Access') , _('Give Administrator Access') , 'kopanoAdmin', FALSE, 0, "", 1, 0) ,
                 )
             ) ,
             'Quotas' => array(
@@ -65,13 +65,7 @@ class kopano extends simplePlugin {
             'Delegation' => array(
                 'name' => _('Delegation') ,
                 'attrs' => array(
-                    new SetAttribute(new MailAttribute(_('Other Users who may directly send as this user') , _('') , 'kopanoSendAsPrivilege')) ,
-                )
-            ) ,
-            'Settings' => array(
-                'name' => _('Settings') ,
-                'attrs' => array(
-                    new BooleanAttribute(_('Administrative Access') , _('Give Administrator Access') , 'kopanoAdmin', FALSE, 0, "", 1, 0) ,
+                    new UsersAttribute(_('Delegate Access') , _('Other Users who may directly send as this user') , 'kopanoSendAsPrivilege', FALSE) ,
                 )
             ) ,
             'Resource Settings' => array(

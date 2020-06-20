@@ -1,3 +1,3 @@
 <?php
-simplePlugin::mainInc('kopano', $ui->dn);
+simpleManagement::mainInc('contactsManagement')
 ?>
