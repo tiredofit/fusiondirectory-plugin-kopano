@@ -2,7 +2,7 @@
 
 # Introduction
 
-This a plugin to manage users/groups/servers for [Kopano](https://www.kopano.io] (fork of Zarafa) within [Fusion Directory](https://wwwfusiondirectory.org) LDAP Manager
+This a plugin to manage users/groups/servers for [Kopano](https://www.kopano.io) (fork of Zarafa) within [Fusion Directory](https://wwwfusiondirectory.org) LDAP Manager
 
 [Changelog](CHANGELOG.md)
 
