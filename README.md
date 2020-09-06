@@ -12,14 +12,14 @@ This a plugin to manage users/groups/servers for [Kopano](https://www.kopano.io)
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-    - [Changelog](CHANGELOG.md)
+- [Authors](#authors)
+- [Table of Contents](#table-of-contents)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#quick-start)
-- [Screenshots](#screenshots)
-- [Todo](#todo)
-- [Known Issues](#known-issues)
+- [Screenshots:](#screenshots)
+- [Todo:](#todo)
+- [Known Issues:](#known-issues)
+  - [References](#references)
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ While this image was built to compliment some of the author's [Docker Images](ht
 
 To use this we assume the following:
 
-- Functioning [OpenLDAP service](https://github.com/tiredofit/docker-openldap-fusiondirectory) 
+- Functioning [OpenLDAP service](https://github.com/tiredofit/docker-openldap-fusiondirectory)
 - Functioning [Fusion Directory service](https://github.com/tiredofit/docker-fusiondirectory)
 - Functioning [Kopano Core Groupware server](https://github.com/tiredofit/docker-kopano)
 
@@ -48,7 +48,7 @@ To use this we assume the following:
 * Contacts Management
 * Dynamic Groups Management
 
-## Known Issues: 
+## Known Issues:
 
 * Delegation for Groups not functioning
 
