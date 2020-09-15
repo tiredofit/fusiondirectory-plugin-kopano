@@ -38,18 +38,18 @@ class kopanoAccount extends simplePlugin {
                     new BooleanAttribute(_('Active') , _('Give Mail Access') , 'kopanoAccount', FALSE, 0, "", 1, 0) ,
                     new BooleanAttribute(_('Hide from Address Book') , _('Hide from Address Book') , 'kopanoHidden', FALSE, 0, "", 1, 0) ,
                     new SetAttribute(new SelectAttribute(_('Enabled Features') , _('Give user ability to utilize these features') , 'kopanoEnabledFeatures', FALSE, array(
-                        'IMAP',
-                        'POP3',
-                        'SMTP',
-                        'MOBILE',
-                        'OUTLOOK'
+                        'imap',
+                        'pop3',
+                        'smtp',
+                        'mobile',
+                        'outlook'
                     ))) ,
                     new SetAttribute(new SelectAttribute(_('Disabled Features') , _('Deny user ability to utilize these features') , 'kopanoDisabledFeatures', FALSE, array(
-                        'IMAP',
-                        'POP3',
-                        'SMTP',
-                        'MOBILE',
-                        'OUTLOOK'
+                        'imap',
+                        'pop3',
+                        'smtp',
+                        'mobile',
+                        'outlook'
                     ))) ,
                     new BooleanAttribute(_('Administrative Access') , _('Give Administrator Access') , 'kopanoAdmin', FALSE, 0, "", 1, 0) ,
                 )

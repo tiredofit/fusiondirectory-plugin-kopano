@@ -1,3 +1,9 @@
+## 0.7.1 2020-09-15 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Change enabled/disabled features values to lowercase
+
+
 ## 0.7.0 2020-09-06 <dave at tiredofit dot ca>
 
    ### Changed
