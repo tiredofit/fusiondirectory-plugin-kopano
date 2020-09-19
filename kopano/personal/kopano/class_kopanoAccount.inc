@@ -57,6 +57,7 @@ class kopanoAccount extends simplePlugin {
             'Quotas' => array(
                 'name' => _('Quotas') ,
                 'attrs' => array(
+                    new BooleanAttribute(_('Override') , _('Override Default Quota') , 'kopanoQuotaOverride', FALSE, 0, "", 1, 0) ,
                     new StringAttribute(_('Send Warning when Mailbox at (MB)') , _('Send Warning email to user at this value') , 'kopanoQuotaWarn', FALSE) ,
                     new StringAttribute(_('Soft Quota (MB)') , _('Limit user from sending email at this value') , 'kopanoQuotaSoft', FALSE) ,
                     new StringAttribute(_('Hard Quota (MB)') , _('Limit user from sending and receiving at this value') , 'kopanoQuotaHard', FALSE) ,

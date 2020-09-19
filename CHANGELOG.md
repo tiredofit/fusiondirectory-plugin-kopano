@@ -1,3 +1,9 @@
+## 0.7.2 2020-09-19 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Add Quota Override flag for Users
+
+
 ## 0.7.1 2020-09-15 <dave at tiredofit dot ca>
 
    ### Changed
