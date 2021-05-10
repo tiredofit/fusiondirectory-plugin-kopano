@@ -4,8 +4,9 @@ class kopanoAccount extends simplePlugin {
     var $objectclasses = array(
         'kopano-user'
     );
-    static function plInfo() {
-        return array(
+    static function plInfo (): array
+    {
+      return [
             'plShortName' => _('Kopano') ,
             'plDescription' => _('Kopano Settings') ,
             'plFilter' => '(objectClass=kopano-user)',
@@ -20,7 +21,7 @@ class kopanoAccount extends simplePlugin {
                 'user'
             ) ,
             'plProvidedAcls' => parent::generatePlProvidedAcls(static ::getAttributesInfo())
-        );
+        ];
     }
     static function getAttributesInfo() {
         global $config;

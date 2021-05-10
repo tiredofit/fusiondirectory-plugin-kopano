@@ -1,3 +1,9 @@
+## 0.8.0 2021-05-10 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Make Plugin compatible with FusionDirectory 1.4
+
+
 ## 0.7.2 2020-09-19 <dave at tiredofit dot ca>
 
    ### Changed
