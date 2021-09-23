@@ -1,3 +1,9 @@
+## 0.8.3 2021-09-23 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Alter defaults for KopanoSecurityGroup
+
+
 ## 0.8.2 2021-09-23 <dave at tiredofit dot ca>
 
    ### Changed
