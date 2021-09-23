@@ -51,7 +51,7 @@ class kopanoGroup extends simplePlugin
                 'name' => _('Settings') ,
                 'attrs' => array(
                     new BooleanAttribute(_('Hide from Address Book') , _('Hide from Address Book') , 'kopanoHidden', FALSE, 0, "", 1, 0) ,
-                    new BooleanAttribute(_('Distribution List only') , _('Do not show this group for security permissions inside Kopano') , 'kopanoSecurityGroup', FALSE, 1, "", 0, 1) ,
+                    new BooleanAttribute(_('Security Group') , _('Show this group for security permissions inside GAB') , 'kopanoSecurityGroup', FALSE, 1, "", 0, 1) ,
                 )
             ) ,
             'Additional' => array(

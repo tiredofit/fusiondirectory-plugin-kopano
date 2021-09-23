@@ -1,3 +1,0 @@
-<?php
-simpleManagement::mainInc('contactsManagement')
-?>
